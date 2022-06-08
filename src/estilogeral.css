@@ -1,0 +1,88 @@
+a:active {
+  text-decoration: none;
+  color: white;
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #a45e4d;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+Nav a:active {
+  text-decoration: none;
+  color: #533730;
+}
+Nav a:link {
+  text-decoration: none;
+  color: #533730;
+}
+
+Nav a:hover {
+  text-decoration: none;
+  color: #a45e4d;
+}
+
+Nav a:visited {
+  text-decoration: none;
+  color: #a45e4d;
+}
+Button {
+  background-color: #a45e4d;
+}
+
+.fundo {
+  background-color: #f0eded;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.botao {
+  background-color: #533730;
+  color: white;
+  border: solid 1px #a45e4d;
+}
+.botao a:hover {
+  background-color: #533730;
+  color: white;
+  border: solid 1px #a45e4d;
+}
+.btn-primary {
+  background-color: #a45e4d;
+  color: white;
+  border: none;
+}
+.btn-primary a:link {
+  background-color: #a45e4d;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #533730;
+  border-color: #a45e4d; /*set the color you want here*/
+}
+
+img:hover {
+  opacity: 0.5;
+}
+.whatsapp {
+  z-index: 5000;
+}
+.cores {
+  color: "#f2f2";
+  font-size: "45px";
+}

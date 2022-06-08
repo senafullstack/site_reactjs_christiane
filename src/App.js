@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Rotas from "./Rotas";
+
+import { createTheme, Button } from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/styles";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Loading, Notify, Alert, Dialogo } from "./views/components/";
+import "./estilogeral.css";
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#533730",
+    },
+    secondary: {
+      main: "#A45E4D",
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <Alert />
+        <Notify />
+        <Loading />
+        <Rotas />
+      </ThemeProvider>
+    </Provider>
   );
 }
 
